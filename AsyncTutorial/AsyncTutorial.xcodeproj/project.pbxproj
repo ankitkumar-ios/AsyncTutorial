@@ -23,10 +23,11 @@
 		EF05C37929867DD9008A0182 /* ApiRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF05C36429867DD9008A0182 /* ApiRequest.framework */; };
 		EF05C37A29867DD9008A0182 /* ApiRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF05C36429867DD9008A0182 /* ApiRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EF05C38529867E8B008A0182 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38429867E8B008A0182 /* FeedModel.swift */; };
-		EF05C38729868025008A0182 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38629868025008A0182 /* NetworkRequest.swift */; };
+		EF05C38729868025008A0182 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38629868025008A0182 /* ApiRequest.swift */; };
 		EF05C38A2986806C008A0182 /* MockJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3892986806C008A0182 /* MockJSONResponse.swift */; };
 		EF05C38C2986807C008A0182 /* MockJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38B2986807C008A0182 /* MockJsonResponse.swift */; };
 		EF05C3912986825D008A0182 /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3902986825D008A0182 /* NetworkRequestTests.swift */; };
+		EF05C3932986A3B2008A0182 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3922986A3B2008A0182 /* NetworkRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,10 +102,11 @@
 		EF05C36D29867DD9008A0182 /* ApiRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF05C37429867DD9008A0182 /* ApiRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestTests.swift; sourceTree = "<group>"; };
 		EF05C38429867E8B008A0182 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
-		EF05C38629868025008A0182 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EF05C38629868025008A0182 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
 		EF05C3892986806C008A0182 /* MockJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJSONResponse.swift; sourceTree = "<group>"; };
 		EF05C38B2986807C008A0182 /* MockJsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJsonResponse.swift; sourceTree = "<group>"; };
 		EF05C3902986825D008A0182 /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
+		EF05C3922986A3B2008A0182 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +230,8 @@
 		EF05C38229867E0E008A0182 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EF05C38629868025008A0182 /* NetworkRequest.swift */,
+				EF05C38629868025008A0182 /* ApiRequest.swift */,
+				EF05C3922986A3B2008A0182 /* NetworkRequest.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -490,8 +493,9 @@
 			files = (
 				EF05C38A2986806C008A0182 /* MockJSONResponse.swift in Sources */,
 				EF05C36829867DD9008A0182 /* ApiRequest.docc in Sources */,
-				EF05C38729868025008A0182 /* NetworkRequest.swift in Sources */,
+				EF05C38729868025008A0182 /* ApiRequest.swift in Sources */,
 				EF05C38529867E8B008A0182 /* FeedModel.swift in Sources */,
+				EF05C3932986A3B2008A0182 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
