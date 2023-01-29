@@ -33,6 +33,11 @@ final class NetworkRequestTests: XCTestCase {
     }
 }
 
+enum NetworkError: Error {
+    case invalidURL, dataNotFound, dataIsEmpty
+}
+
+
 class MockNetworkRequest: NetworkRequest {
     func getTrendingData() async throws -> [FeedModel] {
         let response = try await getApiResponseData(from: "https://api.giphy.com/v1/gifs/trending")
