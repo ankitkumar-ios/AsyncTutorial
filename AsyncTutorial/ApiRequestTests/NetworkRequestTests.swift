@@ -17,11 +17,29 @@ final class NetworkRequestTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+        
+    func test_NetworkRequest_Call() async throws {
+        let model = try await StubbedNetworkRequest.shared.getRequest(on: "https://api.giphy.com/v1/gifs/trending")
+        XCTAssertEqual(model.meta.status, 401)
+    }
+}
+
+class StubbedNetworkRequest: NetworkRequest {
+    static let shared = StubbedNetworkRequest()
     
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    private override init() {
+        // Making it as a singleton class
+    }
+    
+    // It helps to make actual network calls.
+    func getRequest(on url: String) async throws -> FeedResponseModel {
+        guard let url = URL(string: url) else {
+            throw NetworkError.invalidURL
         }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        let response = try JSONDecoder().decode(FeedResponseModel.self, from: data)
+        
+        return response
     }
 }
