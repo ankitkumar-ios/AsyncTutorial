@@ -31,6 +31,13 @@ final class NetworkRequestTests: XCTestCase {
         
         XCTAssertTrue(data.isEmpty)
     }
+    
+    func test_getSearchData_errorResponse() async throws {
+        let request = MockNetworkRequest()
+        let data = try await request.getSearchData(searchMessage: "")
+        
+        XCTAssertTrue(data.isEmpty)
+    }
 }
 
 enum NetworkError: Error {
@@ -39,6 +46,11 @@ enum NetworkError: Error {
 
 
 class MockNetworkRequest: NetworkRequest {
+    func getSearchData(searchMessage search: String) async throws -> [FeedModel] {
+        let response = try await getApiResponseData(from: "https://api.giphy.com/v1/gifs/search?message=\(search)")
+        return response.data
+    }
+    
     func getTrendingData() async throws -> [FeedModel] {
         let response = try await getApiResponseData(from: "https://api.giphy.com/v1/gifs/trending")
         return response.data
