@@ -16,6 +16,17 @@
 		EF05C3462984449D008A0182 /* AsyncTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3452984449D008A0182 /* AsyncTutorialTests.swift */; };
 		EF05C3502984449D008A0182 /* AsyncTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C34F2984449D008A0182 /* AsyncTutorialUITests.swift */; };
 		EF05C3522984449D008A0182 /* AsyncTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3512984449D008A0182 /* AsyncTutorialUITestsLaunchTests.swift */; };
+		EF05C36829867DD9008A0182 /* ApiRequest.docc in Sources */ = {isa = PBXBuildFile; fileRef = EF05C36729867DD9008A0182 /* ApiRequest.docc */; };
+		EF05C36E29867DD9008A0182 /* ApiRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF05C36429867DD9008A0182 /* ApiRequest.framework */; };
+		EF05C37529867DD9008A0182 /* ApiRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C37429867DD9008A0182 /* ApiRequestTests.swift */; };
+		EF05C37629867DD9008A0182 /* ApiRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EF05C36629867DD9008A0182 /* ApiRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF05C37929867DD9008A0182 /* ApiRequest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF05C36429867DD9008A0182 /* ApiRequest.framework */; };
+		EF05C37A29867DD9008A0182 /* ApiRequest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF05C36429867DD9008A0182 /* ApiRequest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF05C38529867E8B008A0182 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38429867E8B008A0182 /* FeedModel.swift */; };
+		EF05C38729868025008A0182 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38629868025008A0182 /* NetworkRequest.swift */; };
+		EF05C38A2986806C008A0182 /* MockJSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3892986806C008A0182 /* MockJSONResponse.swift */; };
+		EF05C38C2986807C008A0182 /* MockJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38B2986807C008A0182 /* MockJsonResponse.swift */; };
+		EF05C3912986825D008A0182 /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3902986825D008A0182 /* NetworkRequestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +44,42 @@
 			remoteGlobalIDString = EF05C32A2984449B008A0182;
 			remoteInfo = AsyncTutorial;
 		};
+		EF05C36F29867DD9008A0182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF05C3232984449B008A0182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF05C36329867DD9008A0182;
+			remoteInfo = ApiRequest;
+		};
+		EF05C37129867DD9008A0182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF05C3232984449B008A0182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF05C32A2984449B008A0182;
+			remoteInfo = AsyncTutorial;
+		};
+		EF05C37729867DD9008A0182 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF05C3232984449B008A0182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF05C36329867DD9008A0182;
+			remoteInfo = ApiRequest;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF05C37E29867DD9008A0182 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF05C37A29867DD9008A0182 /* ApiRequest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EF05C32B2984449B008A0182 /* AsyncTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +95,16 @@
 		EF05C34B2984449D008A0182 /* AsyncTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF05C34F2984449D008A0182 /* AsyncTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTutorialUITests.swift; sourceTree = "<group>"; };
 		EF05C3512984449D008A0182 /* AsyncTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF05C36429867DD9008A0182 /* ApiRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApiRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF05C36629867DD9008A0182 /* ApiRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiRequest.h; sourceTree = "<group>"; };
+		EF05C36729867DD9008A0182 /* ApiRequest.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ApiRequest.docc; sourceTree = "<group>"; };
+		EF05C36D29867DD9008A0182 /* ApiRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApiRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF05C37429867DD9008A0182 /* ApiRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestTests.swift; sourceTree = "<group>"; };
+		EF05C38429867E8B008A0182 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		EF05C38629868025008A0182 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EF05C3892986806C008A0182 /* MockJSONResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJSONResponse.swift; sourceTree = "<group>"; };
+		EF05C38B2986807C008A0182 /* MockJsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJsonResponse.swift; sourceTree = "<group>"; };
+		EF05C3902986825D008A0182 /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF05C37929867DD9008A0182 /* ApiRequest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +130,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF05C36129867DD9008A0182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF05C36A29867DD9008A0182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05C36E29867DD9008A0182 /* ApiRequest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +154,8 @@
 				EF05C32D2984449B008A0182 /* AsyncTutorial */,
 				EF05C3442984449D008A0182 /* AsyncTutorialTests */,
 				EF05C34E2984449D008A0182 /* AsyncTutorialUITests */,
+				EF05C36529867DD9008A0182 /* ApiRequest */,
+				EF05C37329867DD9008A0182 /* ApiRequestTests */,
 				EF05C32C2984449B008A0182 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +166,8 @@
 				EF05C32B2984449B008A0182 /* AsyncTutorial.app */,
 				EF05C3412984449D008A0182 /* AsyncTutorialTests.xctest */,
 				EF05C34B2984449D008A0182 /* AsyncTutorialUITests.xctest */,
+				EF05C36429867DD9008A0182 /* ApiRequest.framework */,
+				EF05C36D29867DD9008A0182 /* ApiRequestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +203,72 @@
 			path = AsyncTutorialUITests;
 			sourceTree = "<group>";
 		};
+		EF05C36529867DD9008A0182 /* ApiRequest */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C3882986804F008A0182 /* RawData */,
+				EF05C38329867E1C008A0182 /* DataModels */,
+				EF05C38229867E0E008A0182 /* Network */,
+				EF05C36629867DD9008A0182 /* ApiRequest.h */,
+				EF05C36729867DD9008A0182 /* ApiRequest.docc */,
+			);
+			path = ApiRequest;
+			sourceTree = "<group>";
+		};
+		EF05C37329867DD9008A0182 /* ApiRequestTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C38D29868081008A0182 /* MockData */,
+				EF05C37429867DD9008A0182 /* ApiRequestTests.swift */,
+				EF05C3902986825D008A0182 /* NetworkRequestTests.swift */,
+			);
+			path = ApiRequestTests;
+			sourceTree = "<group>";
+		};
+		EF05C38229867E0E008A0182 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C38629868025008A0182 /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF05C38329867E1C008A0182 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C38429867E8B008A0182 /* FeedModel.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		EF05C3882986804F008A0182 /* RawData */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C3892986806C008A0182 /* MockJSONResponse.swift */,
+			);
+			path = RawData;
+			sourceTree = "<group>";
+		};
+		EF05C38D29868081008A0182 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				EF05C38B2986807C008A0182 /* MockJsonResponse.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EF05C35F29867DD9008A0182 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05C37629867DD9008A0182 /* ApiRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		EF05C32A2984449B008A0182 /* AsyncTutorial */ = {
@@ -137,10 +278,12 @@
 				EF05C3272984449B008A0182 /* Sources */,
 				EF05C3282984449B008A0182 /* Frameworks */,
 				EF05C3292984449B008A0182 /* Resources */,
+				EF05C37E29867DD9008A0182 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EF05C37829867DD9008A0182 /* PBXTargetDependency */,
 			);
 			name = AsyncTutorial;
 			productName = AsyncTutorial;
@@ -183,6 +326,43 @@
 			productReference = EF05C34B2984449D008A0182 /* AsyncTutorialUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		EF05C36329867DD9008A0182 /* ApiRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF05C37B29867DD9008A0182 /* Build configuration list for PBXNativeTarget "ApiRequest" */;
+			buildPhases = (
+				EF05C35F29867DD9008A0182 /* Headers */,
+				EF05C36029867DD9008A0182 /* Sources */,
+				EF05C36129867DD9008A0182 /* Frameworks */,
+				EF05C36229867DD9008A0182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ApiRequest;
+			productName = ApiRequest;
+			productReference = EF05C36429867DD9008A0182 /* ApiRequest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF05C36C29867DD9008A0182 /* ApiRequestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF05C37F29867DD9008A0182 /* Build configuration list for PBXNativeTarget "ApiRequestTests" */;
+			buildPhases = (
+				EF05C36929867DD9008A0182 /* Sources */,
+				EF05C36A29867DD9008A0182 /* Frameworks */,
+				EF05C36B29867DD9008A0182 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF05C37029867DD9008A0182 /* PBXTargetDependency */,
+				EF05C37229867DD9008A0182 /* PBXTargetDependency */,
+			);
+			name = ApiRequestTests;
+			productName = ApiRequestTests;
+			productReference = EF05C36D29867DD9008A0182 /* ApiRequestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +384,13 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = EF05C32A2984449B008A0182;
 					};
+					EF05C36329867DD9008A0182 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					EF05C36C29867DD9008A0182 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = EF05C32A2984449B008A0182;
+					};
 				};
 			};
 			buildConfigurationList = EF05C3262984449B008A0182 /* Build configuration list for PBXProject "AsyncTutorial" */;
@@ -222,6 +409,8 @@
 				EF05C32A2984449B008A0182 /* AsyncTutorial */,
 				EF05C3402984449D008A0182 /* AsyncTutorialTests */,
 				EF05C34A2984449D008A0182 /* AsyncTutorialUITests */,
+				EF05C36329867DD9008A0182 /* ApiRequest */,
+				EF05C36C29867DD9008A0182 /* ApiRequestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +434,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EF05C3492984449D008A0182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF05C36229867DD9008A0182 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF05C36B29867DD9008A0182 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -281,6 +484,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF05C36029867DD9008A0182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05C38A2986806C008A0182 /* MockJSONResponse.swift in Sources */,
+				EF05C36829867DD9008A0182 /* ApiRequest.docc in Sources */,
+				EF05C38729868025008A0182 /* NetworkRequest.swift in Sources */,
+				EF05C38529867E8B008A0182 /* FeedModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF05C36929867DD9008A0182 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05C38C2986807C008A0182 /* MockJsonResponse.swift in Sources */,
+				EF05C37529867DD9008A0182 /* ApiRequestTests.swift in Sources */,
+				EF05C3912986825D008A0182 /* NetworkRequestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +517,21 @@
 			isa = PBXTargetDependency;
 			target = EF05C32A2984449B008A0182 /* AsyncTutorial */;
 			targetProxy = EF05C34C2984449D008A0182 /* PBXContainerItemProxy */;
+		};
+		EF05C37029867DD9008A0182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF05C36329867DD9008A0182 /* ApiRequest */;
+			targetProxy = EF05C36F29867DD9008A0182 /* PBXContainerItemProxy */;
+		};
+		EF05C37229867DD9008A0182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF05C32A2984449B008A0182 /* AsyncTutorial */;
+			targetProxy = EF05C37129867DD9008A0182 /* PBXContainerItemProxy */;
+		};
+		EF05C37829867DD9008A0182 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF05C36329867DD9008A0182 /* ApiRequest */;
+			targetProxy = EF05C37729867DD9008A0182 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,6 +672,7 @@
 		EF05C3562984449D008A0182 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +685,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +702,7 @@
 		EF05C3572984449D008A0182 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +715,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +805,104 @@
 			};
 			name = Release;
 		};
+		EF05C37C29867DD9008A0182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 86XB87XK2Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankit.ApiRequest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EF05C37D29867DD9008A0182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 86XB87XK2Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankit.ApiRequest;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF05C38029867DD9008A0182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86XB87XK2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankit.ApiRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsyncTutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsyncTutorial";
+			};
+			name = Debug;
+		};
+		EF05C38129867DD9008A0182 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 86XB87XK2Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankit.ApiRequestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AsyncTutorial.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AsyncTutorial";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -597,6 +938,24 @@
 			buildConfigurations = (
 				EF05C35C2984449D008A0182 /* Debug */,
 				EF05C35D2984449D008A0182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF05C37B29867DD9008A0182 /* Build configuration list for PBXNativeTarget "ApiRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF05C37C29867DD9008A0182 /* Debug */,
+				EF05C37D29867DD9008A0182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF05C37F29867DD9008A0182 /* Build configuration list for PBXNativeTarget "ApiRequestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF05C38029867DD9008A0182 /* Debug */,
+				EF05C38129867DD9008A0182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
