@@ -28,6 +28,8 @@
 		EF05C38C2986807C008A0182 /* MockJsonResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C38B2986807C008A0182 /* MockJsonResponse.swift */; };
 		EF05C3912986825D008A0182 /* NetworkRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3902986825D008A0182 /* NetworkRequestTests.swift */; };
 		EF05C3932986A3B2008A0182 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3922986A3B2008A0182 /* NetworkRequest.swift */; };
+		EF05C3952986E8EE008A0182 /* FeedMetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3942986E8EE008A0182 /* FeedMetaModel.swift */; };
+		EF05C3972986E910008A0182 /* FeedResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF05C3962986E910008A0182 /* FeedResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		EF05C38B2986807C008A0182 /* MockJsonResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJsonResponse.swift; sourceTree = "<group>"; };
 		EF05C3902986825D008A0182 /* NetworkRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestTests.swift; sourceTree = "<group>"; };
 		EF05C3922986A3B2008A0182 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		EF05C3942986E8EE008A0182 /* FeedMetaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMetaModel.swift; sourceTree = "<group>"; };
+		EF05C3962986E910008A0182 /* FeedResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				EF05C38429867E8B008A0182 /* FeedModel.swift */,
+				EF05C3942986E8EE008A0182 /* FeedMetaModel.swift */,
+				EF05C3962986E910008A0182 /* FeedResponseModel.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -492,9 +498,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF05C38A2986806C008A0182 /* MockJSONResponse.swift in Sources */,
+				EF05C3972986E910008A0182 /* FeedResponseModel.swift in Sources */,
 				EF05C36829867DD9008A0182 /* ApiRequest.docc in Sources */,
 				EF05C38729868025008A0182 /* ApiRequest.swift in Sources */,
 				EF05C38529867E8B008A0182 /* FeedModel.swift in Sources */,
+				EF05C3952986E8EE008A0182 /* FeedMetaModel.swift in Sources */,
 				EF05C3932986A3B2008A0182 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
