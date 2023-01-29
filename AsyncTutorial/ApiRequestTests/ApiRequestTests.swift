@@ -34,12 +34,6 @@ final class ApiRequestTests: XCTestCase {
 }
 
 //MARK: - Stubbing classed
-
-// Network error scenarios
-enum NetworkError: Error {
-    case invalidURL, dataNotFound, dataIsEmpty
-}
-
 // This class is for sending networks requests and getting response back
 class MockApiRequest: ApiRequest {
 
