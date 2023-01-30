@@ -20,14 +20,14 @@ final class ApiRequestTests: XCTestCase {
 
     func test_getTrendingData_errorResponse() async throws {
         let request = MockApiRequest()
-        let data = try await request.getTrendingData()
+        let data = try await request.getTrendingData(from: "https://api.giphy.com/v1/gifs/")
         
         XCTAssertTrue(data.isEmpty)
     }
     
     func test_getSearchData_errorResponse() async throws {
         let request = MockApiRequest()
-        let data = try await request.getSearchData(searchMessage: "")
+        let data = try await request.getSearchData(from: "https://api.giphy.com/v1/gifs/", searchMessage: "")
         
         XCTAssertTrue(data.isEmpty)
     }

@@ -15,14 +15,14 @@ public enum NetworkError: Error {
 // This class is for sending networks requests and getting response back
 public class ApiRequest: NSObject {
     // Requesting response for the searched strinng.
-    public func getSearchData(searchMessage search: String) async throws -> [FeedModel] {
-        let response = try await NetworkRequest.shared.getRequest(on: "https://api.giphy.com/v1/gifs/search?message=\(search)")
+    public func getSearchData(from baseURL: String, searchMessage search: String) async throws -> [FeedModel] {
+        let response = try await NetworkRequest.shared.getRequest(on: "\(baseURL)/search?message=\(search)")
         return response.data
     }
     
     // Getting trending data response
-    public func getTrendingData() async throws -> [FeedModel] {
-        let response = try await NetworkRequest.shared.getRequest(on: "https://api.giphy.com/v1/gifs/trending")
+    public func getTrendingData(from baseURL: String) async throws -> [FeedModel] {
+        let response = try await NetworkRequest.shared.getRequest(on: "\(baseURL)/trending")
         return response.data
     }
 }
